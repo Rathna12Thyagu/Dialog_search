@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Search Engine</title>
+        <style>
+            body {
+                background-image: url('/static/movie.jpg');
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+            }
+            
+            .search-container {
+                position: relative;
+            }
+            
+            input[type="text"] {
+                width: 550px;
+                height: 30px;
+                border-radius: 15px;
+                padding: 10px;
+                font-size: 16px;
+                border: none;
+            }
+            
+            button {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                margin: 5px;
+                padding: 10px 20px;
+                border-radius: 15px;
+                font-size: 16px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="search-container">
+            <form action="/out" method="post">
+                <input type="text" name="dialog" placeholder="Enter dialog">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </body>
+</html>
